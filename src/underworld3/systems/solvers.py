@@ -384,7 +384,7 @@ class SNES_Stokes(SNES_Stokes_SaddlePt):
     the term in the `sympy` expression.
 
       - A preconditioner is usually required for the saddle point system and this is provided
-    though the `saddle_preconditioner` property. The default choice is $1/\eta$ for a scalar viscosity function.
+    through the `saddle_preconditioner` property. The default choice is $1/\eta$ for a scalar viscosity function.
 
     ## Notes
 
@@ -636,7 +636,7 @@ class SNES_VE_Stokes(SNES_Stokes):
     the term in the `sympy` expression.
 
       - A preconditioner is usually required for the saddle point system and this is provided
-    though the `saddle_preconditioner` property. The default choice is $1/\eta$ for a scalar viscosity function.
+    through the `saddle_preconditioner` property. The default choice is $1/\eta$ for a scalar viscosity function.
 
     ## Notes
 
