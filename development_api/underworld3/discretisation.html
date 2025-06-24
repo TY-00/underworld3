@@ -900,6 +900,7 @@ True: index into the local coordinate array</p>
         return self.dm.getCoordinateDim()
 
     def view(self, level=0):
+    #level=0 (default) displays basic mesh information (variables and boundaries) while level=1 displays detailed mesh information (including PETSc information)
 
         import numpy as np
         if level==0:
@@ -3149,6 +3150,7 @@ If the local vector is already up to date, this method will do nothing.</p></div
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def view(self, level=0):
+#level=0 (default) displays basic mesh information (variables and boundaries) while level=1 displays detailed mesh information (including PETSc information)
 
     import numpy as np
     if level==0:
