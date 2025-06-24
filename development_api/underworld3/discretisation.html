@@ -900,7 +900,15 @@ True: index into the local coordinate array</p>
         return self.dm.getCoordinateDim()
 
     def view(self, level=0):
-    #level=0 (default) displays basic mesh information (variables and boundaries) while level=1 displays detailed mesh information (including PETSc information)
+        &#39;&#39;&#39;
+        Displays mesh information at different levels.
+        
+        Parameters
+        ----------
+        level : int (0 default) 
+            The display level. 
+            0, for basic mesh information (variables and boundaries), while level=1 displays detailed mesh information (including PETSc information)
+        &#39;&#39;&#39;
 
         import numpy as np
         if level==0:
@@ -3150,7 +3158,15 @@ If the local vector is already up to date, this method will do nothing.</p></div
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def view(self, level=0):
-#level=0 (default) displays basic mesh information (variables and boundaries) while level=1 displays detailed mesh information (including PETSc information)
+    &#39;&#39;&#39;
+    Displays mesh information at different levels.
+    
+    Parameters
+    ----------
+    level : int (0 default) 
+        The display level. 
+        0, for basic mesh information (variables and boundaries), while level=1 displays detailed mesh information (including PETSc information)
+    &#39;&#39;&#39;
 
     import numpy as np
     if level==0:
@@ -3342,7 +3358,13 @@ If the local vector is already up to date, this method will do nothing.</p></div
     else:
         print(f&#34;\n Please use view() or view(0) for default view and view(1) for a detailed view of the mesh.&#34;)</code></pre>
 </details>
-<div class="desc"></div>
+<div class="desc"><p>Displays mesh information at different levels.</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>level</code></strong> :&ensp;<code>int (0 default) </code></dt>
+<dd>The display level.
+0, for basic mesh information (variables and boundaries), while level=1 displays detailed mesh information (including PETSc information)</dd>
+</dl></div>
 </dd>
 <dt id="underworld3.discretisation.Mesh.view_parallel"><code class="name flex">
 <span>def <span class="ident">view_parallel</span></span>(<span>self)</span>
