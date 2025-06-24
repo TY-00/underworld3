@@ -509,7 +509,15 @@ class Mesh(Stateful, uw_object):
         return self.dm.getCoordinateDim()
 
     def view(self, level=0):
-    #level=0 (default) displays basic mesh information (variables and boundaries) while level=1 displays detailed mesh information (including PETSc information)
+        '''
+        Displays mesh information at different levels.
+        
+        Parameters
+        ----------
+        level : int (0 default) 
+            The display level. 
+            0, for basic mesh information (variables and boundaries), while level=1 displays detailed mesh information (including PETSc information)
+        '''
 
         import numpy as np
         if level==0:
